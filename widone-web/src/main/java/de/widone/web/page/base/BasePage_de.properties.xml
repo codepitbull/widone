@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>BasePage</comment>
+    <entry key="taskLists">Aufgabenlisten</entry>
+    <entry key="about">Infos</entry>
+    <entry key="userDetails">User Details</entry>
+    <entry key="logout">Abmelden</entry>
+    <entry key="loginName">Hallo ${username}</entry>
+</properties>

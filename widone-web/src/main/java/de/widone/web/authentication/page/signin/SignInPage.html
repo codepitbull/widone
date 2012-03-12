@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>WiDone</title>
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hero-unit">
+        <h1>WiDone!</h1>
+
+        <p>
+            <wicket:message key="titleMessage">An example application for Wicket</wicket:message>
+        </p>
+        <p><a class="btn primary large"><wicket:message key="toTheBook">To the book &raquo;</wicket:message></a></p>
+    </div>
+    <div wicket:id="signInPanel"/>
+    <!-- <a wicket:id="createNewUserLink"><wicket:message key="createNewUserLink"/></a> -->
+</div>
+</body>
+</html>

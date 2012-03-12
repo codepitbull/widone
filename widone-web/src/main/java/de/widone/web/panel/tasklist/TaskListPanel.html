@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<html xmlns:wicket="http://wicket.apache.org">
+<body>
+<wicket:panel>
+    <table class="bordered-table zebra-striped">
+        <thead>
+            <tr>
+                <th colspan="2"><span wicket:id="newTask"/></th>
+            </tr>
+        </thead>
+        <tbody wicket:id="taskListContainer">
+            <tr wicket:id="taskList">
+                <td width="85%"><span wicket:id="description">description</span></td>
+                <td width="15%">
+                    <a wicket:id="moveUp"><img wicket:id="upImg" src="up.png"></a>&nbsp;
+                    <a wicket:id="moveDown"><img wicket:id="downImg" src="down.png"></a>&nbsp;
+                    <a wicket:id="done"><img wicket:id="doneImg" src="ok.png"></a>&nbsp;
+                    <a wicket:id="delete"><img wicket:id="deleteImg" src="delete.png"></a>
+                </td>
+            </tr>
+        </tbody>
+	    <a wicket:id="switchContainer"><wicket:message key="switchImplementation"/></a>
+    </table>
+</wicket:panel>
+</body>
+</html>

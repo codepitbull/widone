@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>SignInPage</comment>
+    <entry key="password">Passwort</entry>
+    <entry key="passwordAgain">Passwort wiederholen</entry>
+    <entry key="username">Benutzername</entry>
+    <entry key="firstname">Firstname</entry>
+    <entry key="lastname">Lastname</entry>
+    <entry key="birthday">Birthday</entry>
+    <entry key="email">eMail</entry>
+    <entry key="save">Speichern</entry>
+    <entry key="reset">Reset</entry>
+    <entry key="cancel">Abbrechen</entry>
+    <entry key="submit">Abschicken</entry>
+    <entry key="description">Beschreibung</entry>
+    <entry key="taskList">Aufgabenliste</entry>
+</properties>

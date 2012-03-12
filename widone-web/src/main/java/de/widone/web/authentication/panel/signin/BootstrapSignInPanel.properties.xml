@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>SignInPage</comment>
+    <entry key="rememberme">Remember Me</entry>
+    <entry key="loginPanelHeader">Login</entry>
+    <entry key="signIn">Sign in</entry>
+    <entry key="newUser">New User</entry>
+</properties>

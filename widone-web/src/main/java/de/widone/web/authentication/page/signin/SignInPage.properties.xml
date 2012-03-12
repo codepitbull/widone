@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>SignInPage</comment>
+    <entry key="createNewUserLink">Create a new User</entry>
+    <entry key="titleMessage">A Wicket Demo-Application</entry>
+    <entry key="toTheBook">Get the book</entry>
+</properties>

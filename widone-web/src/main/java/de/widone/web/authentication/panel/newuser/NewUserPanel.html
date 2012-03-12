@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<html xmlns:wicket="http://wicket.apache.org">
+<body>
+<wicket:panel>
+    <span wicket:id="feedback"/>
+
+    <form wicket:id="newUserForm">
+        <fieldset>
+            <legend><wicket:message key="newUserPanelHeader">New User Panel Header</wicket:message> </legend>
+            <div class="clearfix">
+                <label for="username" wicket:id="usernameLabel"><wicket:message key="username">Username</wicket:message></label>
+                <div class="input">
+                    <input class="xlarge" id="username" name="username" size="30" type="text" wicket:id="username"/>
+                </div>
+            </div>
+            <div class="clearfix">
+                <label for="password" wicket:id="passwordLabel"><wicket:message key="password">Password</wicket:message></label>
+                <div class="input">
+                    <input class="xlarge" id="password" name="password" size="30" type="password" wicket:id="password"/>
+                </div>
+            </div>
+            <div class="clearfix">
+                <label for="passwordAgain" wicket:id="passwordAgainLabel"><wicket:message key="passwordAgain">Password</wicket:message></label>
+                <div class="input">
+                    <input class="xlarge" id="passwordAgain" name="passwordAgain" size="30" type="password" wicket:id="passwordAgain"/>
+                </div>
+            </div>
+            <div class="actions">
+                <button type="submit" class="btn primary" wicket:id="submit"><wicket:message key="submit">Submit</wicket:message></button>&nbsp;
+                <button type="reset" class="btn"><wicket:message key="reset">Reset</wicket:message></button>&nbsp;
+                <a class="btn" wicket:id="cancel"><wicket:message key="cancel">Cancel</wicket:message></a>
+            </div>
+        </fieldset>
+    </form>
+</wicket:panel>
+</body>
+</html>

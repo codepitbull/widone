@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+    <head>
+        <meta charset="utf-8"/>
+        <title>WiDone</title>
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="fill">
+                <div class="container">
+                    <a class="brand" href="#">WiDone: <span wicket:id="loginName">Logged in as</span></a>
+                    <ul class="nav">
+                        <li class="active"><a href="#"><wicket:message key="taskLists">TASK LISTS</wicket:message></a></li>
+                        <li><a wicket:id="userDetails"><wicket:message key="userDetails">USER DETAILS</wicket:message></a></li>
+                        <li><a href="#"><wicket:message key="about">ABOUT</wicket:message></a></li>
+                        <li><a wicket:id="logout"><wicket:message key="logout">LOGOUT</wicket:message></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header class="jumbotron masthead" id="overview">
+            <div class="inner">
+                <div class="container">
+                    <h1>WiDone</h1>
+                    <p class="lead">
+                        Viel Spass beim Erledigen ...
+                    </p>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <wicket:child>
+                WILL BE REPLACED BY DERIVED PAGES
+            </wicket:child>
+        </div>
+        <div wicket:id="modalWindow"></div>
+    </body>
+</html>

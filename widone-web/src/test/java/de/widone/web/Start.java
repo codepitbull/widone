@@ -22,6 +22,7 @@ import org.eclipse.jetty.server.bio.SocketConnector;
 import org.eclipse.jetty.server.ssl.SslSocketConnector;
 import org.eclipse.jetty.util.resource.Resource;
 import org.eclipse.jetty.webapp.WebAppContext;
+import java.io.File;
 
 public class Start {
     public static void main(String[] args) throws Exception {
@@ -66,7 +67,15 @@ public class Start {
         WebAppContext bb = new WebAppContext();
         bb.setServer(server);
         bb.setContextPath("/");
-        bb.setWar("widone-web/src/main/webapp");
+
+        File file = new File("src/main/webapp");
+        //required as the paths are slightly different between idea and eclipse (grrr)
+        if(file.exists()) {
+            bb.setWar("src/main/webapp");
+        }
+        else {
+            bb.setWar("widone-web/src/main/webapp");
+        }
 
         // START JMX SERVER
         // MBeanServer mBeanServer = ManagementFactory.getPlatformMBeanServer();
